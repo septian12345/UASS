@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produk/Jasa</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+        <div id="navhead">   
+            
+            <a href="index.html"><img class="logo" src="foto/Logo komputer.png" alt="" srcset=""></a>
+            <h1>Toko Komputer Online</h1>
+            
+                    <form class="searchbar">
+                        <input class="searchbar1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="searchbar2" type="submit">Search</button>
+                    </form>
+    
+        </div> 
+            <div class="navbarmenu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUK</a></li>
+                        <li><a href="contact.html">KONTAK KAMI</a></li>
+                        <li><a href="invoice.html">INVOICE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        
+
+    <main>
+        <img class="imgp" src="Foto/battlefories.jpg" alt="">
+        <div class="contentProduct">
+        <h2 class="pc">Spesifikasi Paket Pc BattleFories</h2>
+        <p  class="pc">Setiap Varian Memiliki Spesifikasi Yang Berbeda, Untuk Detail Spesifikasi Silahkan Cek Gambar Varian masing - masing Produk <br>
+
+            KETENTUAN PAKET PC RAKITAN ENTERKOMPUTER<br>
+            1. Khusus order online, komponen HIGH RISK (Rentan rusak) pada Paket PC ini akan DILEPAS demi alasan keamanan ketika pengiriman.<br>
+            2. Ketika Pesanan sudah tiba di tujuan pembeli dihimbau agar hati-hati dalam pemasangan komponennya.<br>
+            Jika ragu kami sarankan agar meminta bantuan teknisi komputer berpengalaman.<br>
+            Contoh komponen high risk : Processor AM4/Heatsink model Tower/VGA Dual-Tripe Fan/Harddisk dll.<br>
+            3. Paket ini sudah terinstall Windows 11 Unactivated (bisa diaktifkan dengan membeli lisensi full)<br>
+            4. Harga yang tertera adalah Harga NET.<br>
+            5. Harap simpan Nota dan Box komponen Paket untuk klaim garansi<br>
+            6. Enterkomputer bersedia membantu proses Garansi<br>
+            7. Garansi part 1 tahun<br>
+            8. Garansi tidak berlaku apabila kerusakan diakibatkan oleh kelalaian pengguna <br>
+            9. Setelah 1 tahun, Garansi yang berlaku adalah garansi service & sparepart sesuai dengan part masing-masing(Garansi tiap part berbeda-beda)</p>
+        </div>
+        <h2>Input Transaksi</h2>
+        <div class="dpf">
+            <form id="transaction-form">
+                <label for="product">Jumlah Produk: </label>
+                <input type="number" id="product" name="product" ><br>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="address">Alamat:</label>
+                <textarea id="address" name="address" required></textarea><br>
+                <button type="submit"><a href="invoice.html"> Checkout/Buat Pesanan</a></button>
+            </form>
+        </div>    
+    </main>
+
+    <footer>
+        <marquee>Promo besar-besaran! Jangan lewatkan!</marquee>
+        <p>© 2024 Toko Komputer Online</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const product = urlParams.get('product');
+            document.getElementById('product').value = product;
+        });
+
+        document.getElementById('transaction-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'invoice.html';
+        });
+    </script>
+</body>
+</html>

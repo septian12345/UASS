@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produk/Jasa</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+        <div id="navhead">   
+            
+            <a href="index.html"><img class="logo" src="foto/Logo komputer.png" alt="" srcset=""></a>
+            <h1>Toko Komputer Online</h1>
+            
+                    <form class="searchbar">
+                        <input class="searchbar1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="searchbar2" type="submit">Search</button>
+                    </form>
+    
+        </div> 
+            <div class="navbarmenu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUK</a></li>
+                        <li><a href="contact.html">KONTAK KAMI</a></li>
+                        <li><a href="invoice.html">INVOICE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+    <main class="invoice">
+        <h2>Struk/Invoice</h2>
+        <p>Terima kasih telah melakukan transaksi. Berikut adalah struk/invoice Anda:</p>
+        <!-- Contoh struk/invoice -->
+        <div class="invoice">
+            <p>Nama: <span id="invoice-name"></span></p>
+            <p>Email: <span id="invoice-email"></span></p>
+            <p>Jumlah Produk: <span id="invoice-product"></span></p>
+            <p>Alamat: <span id="invoice-address"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <marquee>Promo besar-besaran! Jangan lewatkan!</marquee>
+        <p>© 2024 Toko Komputer Online</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ambil data dari localStorage atau dari URL parameter jika diimplementasikan
+            document.getElementById('invoice-name').textContent = 'Nama Pelanggan';
+            document.getElementById('invoice-email').textContent = 'email@domain.com';
+            document.getElementById('invoice-product').textContent = 'Nama Produk';
+            document.getElementById('invoice-address').textContent = 'Alamat Pelanggan';
+        });
+    </script>
+</body>
+</html>
